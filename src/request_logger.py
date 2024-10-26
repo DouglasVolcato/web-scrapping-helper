@@ -15,10 +15,9 @@ class RequestLogger:
     def __init__(self):
         self.__folderPath = 'tmp/logs'
         os.makedirs(self.__folderPath, exist_ok=True)
-
-    def execute(self, input: RequestLoggerInput) -> None:
         self.__clearLogs()
 
+    def execute(self, input: RequestLoggerInput) -> None:
         miliseconds = int(round(time.time() * 1000))
         fileName = f'{miliseconds}.txt'
 

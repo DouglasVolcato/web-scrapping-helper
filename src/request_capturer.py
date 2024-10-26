@@ -16,19 +16,20 @@ class RequestCapturer:
         input['callback'](self.__driver)
 
         for request in self.__driver.requests:
-            self.__logger.execute({
-                'request': {
-                    'url': request.url,
-                    'method': request.method,
-                    'headers': request.headers,
-                    'params': request.params,
-                    'body': request.body,
-                },
-                'response': {
-                    'status_code': request.response.status_code,
-                    'headers': request.response.headers,
-                    'body': request.response.body,
-                }
-            })
+            if 'firefox' not in request.url and request.response:
+                self.__logger.execute({
+                    'request': {
+                        'url': request.url,
+                        'method': request.method,
+                        'headers': request.headers,
+                        'params': request.params,
+                        'body': request.body,
+                    },
+                    'response': {
+                        'status_code': request.response.status_code,
+                        'headers': request.response.headers,
+                        'body': request.response.body,
+                    }
+                })
 
         self.__driver.close()
