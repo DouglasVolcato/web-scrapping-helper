@@ -1,0 +1,5 @@
+Request:
+{'url': 'https://viamao.govbr.cloud/pronimtb/blank.gif', 'method': 'GET', 'headers': [('user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'), ('accept', 'image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5'), ('accept-language', 'en-US,en;q=0.5'), ('accept-encoding', 'gzip, deflate, br, zstd'), ('referer', 'https://viamao.govbr.cloud/pronimtb/index.asp?acao=4&item=2'), ('sec-fetch-dest', 'image'), ('sec-fetch-mode', 'no-cors'), ('sec-fetch-site', 'same-origin'), ('priority', 'u=5, i'), ('te', 'trailers'), ('cookie', 'ASPSESSIONIDCEQBRBST=AGHNDONBOOFFBFIAANAMCNHP')], 'params': {}, 'body': b''}
+
+Response:
+{'status_code': 200, 'headers': [('content-type', 'image/gif'), ('last-modified', 'Thu, 26 Sep 2024 20:46:12 GMT'), ('accept-ranges', 'bytes'), ('etag', '"0423e1f5510db1:0"'), ('server', 'Microsoft-IIS/10.0'), ('x-powered-by', 'ASP.NET'), ('date', 'Sat, 26 Oct 2024 17:04:41 GMT'), ('content-length', '43')], 'body': b'GIF89a\x01\x00\x01\x00\x80\x00\x00\xff\xff\xff\x00\x00\x00!\xf9\x04\x00\x00\x00\x00\x00,\x00\x00\x00\x00\x01\x00\x01\x00\x00\x02\x02D\x01\x00;'}
